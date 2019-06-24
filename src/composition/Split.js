@@ -1,9 +1,12 @@
 import React from 'react';
+import '../styles/Split.css';
 
-export default function Split() {
+function Split(props) {
   return (
     <div className="split">
-      This is the split component.
+      {props.children}
     </div>
   );
 }
+
+export default Split;
